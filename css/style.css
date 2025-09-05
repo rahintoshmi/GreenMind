@@ -404,12 +404,85 @@ header .mobile .links a i {
     width: 30px;
     height: 6px;
 }
-.dot{
+
+.dot {
     position: relative;
 }
+
 .slick-dots {
     position: absolute;
     top: -100px;
     left: -10px;
 }
-    /*=====  End of review  ======*/
+
+/*=====  End of review  ======*/
+
+
+
+/*=============================================
+    =            footer            =
+    =============================================*/
+#footer {
+    background-color: var(--color-1);
+    padding: 48px 0;
+}
+
+#footer p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+    margin: 24px 0;
+}
+
+#footer .links a i {
+    color: var(--color-3);
+    width: 20px;
+    height: 20px;
+}
+
+#footer .links a {
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--color-4);
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+}
+
+#footer .links {
+    margin-bottom: 98px;
+}
+
+#footer ul li .active {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-2);
+}
+
+#footer ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-4);
+}
+
+#footer ul li {
+    margin: 30px 0;
+}
+
+#footer ul li:hover {
+    transform: translateY(-10px);
+    border-bottom: 1px solid rgb(26, 71, 77);
+}
+
+#footer .links a:hover {
+    color: var(--color-1);
+    background-color: #daebf0;
+    border-color: #daebf0;
+}
+
+#footer .links a:hover i {
+    color: black;
+
+}
+
+/*=====  End of footer  ======*/

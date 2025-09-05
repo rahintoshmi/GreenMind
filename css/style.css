@@ -9,26 +9,263 @@
     --second-family: "Quella", sans-serif;
 
 }
-body{
+
+.container {
+    max-width: 1248px;
+}
+
+body {
     font-family: var(--font-family);
 }
+
 /* CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul, ol {
-  list-style: none;
+    list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, ul, ol {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* css common property ends here */
+
+
+/*=============================================
+=            header            =
+=============================================*/
+header {
+    margin: 48px 0px;
+}
+
+header nav ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+}
+
+header nav ul {
+    gap: 48px;
+}
+
+header nav ul li a.active {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-2);
+}
+
+header nav .links a {
+    color: var(--color-2);
+    padding: 0 10px;
+}
+
+.fa-user {
+    border-right: 1px solid var(--color-2);
+    padding: 0 40px;
+}
+
+/*=====  End of header  ======*/
+
+/* for mobile and tablets */
+header .mobile .links a i {
+    color: var(--color-2);
+    margin: 0 7px;
+}
+
+.btn-primary {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: black;
+}
+
+.mobile .menu ul {
+    display: block;
+    text-align: center;
+}
+
+.mobile .menu ul li {
+    padding: 20px 0;
+}
+
+.mobile .menu ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+}
+
+.mobile .menu ul li a:hover {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-2);
+    transform: translateX(50px);
+}
+
+
+.mobile .menu ul li:hover {
+    background-color: var(--color-1);
+    border-radius: 5px;
+    transform: translateY(-20px);
+}
+
+/* end of mobile device header */
+
+
+/*=============================================
+=            banner            =
+=============================================*/
+#banner .container {
+    padding: 48px 56px 10px 48px;
+    background-color: var(--color-1);
+    border-radius: 24px;
+}
+
+#banner h2 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 100%;
+    color: #000;
+}
+
+#banner h3 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--color-2);
+    margin-top: 24px;
+}
+
+#banner p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-2);
+    margin-bottom: 48px;
+}
+
+#banner input {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 18px 199px 19px 18px;
+    outline: none;
+    border: none;
+}
+
+#banner button {
+    border-radius: 12px;
+    background-color: var(--color-1);
+    width: 48px;
+    height: 48px;
+    border-color: var(--color-1);
+    margin-left: -12%;
+    margin-top: 10px;
+    box-shadow: none;
+    padding: 10px;
+
+}
+
+#banner button a i {
+    color: #000;
+}
+
+/*=====  End of banner  ======*/
+
+
+/*=============================================
+=            plants            =
+=============================================*/
+#plants {
+    margin: 96px 0px 112px;
+}
+
+#plants .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#plants h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-2);
+}
+
+#plants p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+    margin: 12px 0 24px;
+}
+
+#plants a {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-2);
+    border-radius: 8px;
+    padding: 12px 19px;
+    background-color: var(--color-1);
+}
+
+#plants h4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-2);
+    margin: 12px 0 7px;
+}
+
+#plants .card {
+    border: none;
+}
+
+/*=====  End of plants  ======*/
+
+
+
+/*=============================================
+=            about            =
+=============================================*/
+#about {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#about h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-2);
+    margin-bottom: 12px;
+}
+
+#about p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-4);
+    margin-bottom: 48px;
+}
+
+#about h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    margin: 24px 0 12px;
+}
+
+
+/*=====  End of about  ======*/

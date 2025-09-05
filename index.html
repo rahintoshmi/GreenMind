@@ -1,23 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMind</title>
+    <!-- for slider animation -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- FontAwesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <nav class="d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="flex gap-5">
+                            <a href="#"><img src="./images/GREENMIND.png" alt=""></a>
+                            <div class="menu">
+                                <ul class="flex">
+                                    <li><a href="#" class="active">Home</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#" class="contacts">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 links d-flex justify-content-end">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-align-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!-- for mobile device and tablets -->
+        <div class="d-lg-none mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#"><img src="./images/GREENMIND.png" alt=""></a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="fa-solid fa-align-right"></i></button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"><a href="#"><img src="./images/GREENMIND.png" alt=""></a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+               <div class="menu">
+                                <ul class="flex">
+                                    <li><a href="#" class="active">Home</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#" class="contacts">Contacts</a></li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+    <!-- banner section starts -->
+     <section id="banner">
+        <div class="container" style="background-image: url(./images/Frame\ 3.png);">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Buy your <br> dream plants</h2>
+                    <div class="d-flex gap-5 content">
+                        <div class="plants1">
+                            <h3>50+</h3>
+                            <p>Plant Species</p>
+                            
+                        </div>
+                        <img src="./images/Line 2.png" alt="" class="img-fluid" style="height: 80px; margin-top: 22px;">
+                         <div>
+                            <h3>100+</h3> 
+                            <p>Customers</p>
+                        </div>
+                    </div>
+                    <form action="" class="d-flex">
+                        <input type="text" name="" id="" placeholder="What are you looking for?">
+                        <button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/Group 17.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Banner section ends -->
+
+
+     <!-- Plants  -->
+      <section id="plants">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-2" style="margin-right: 60px;">
+                    <h2>Best Selling Plants</h2>
+                    <p>Easiest way to healthy life by buying your favorite plants </p>
+                    <a href="#">See more<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-3" style="margin-right: 10px;">
+                    <div class="card">
+                        <img src="./images/Frame 9.png" alt="">
+                        <h4>Natural Plants</h4>
+                        <p>₱ <span>1,400.00</span></p>
+                    </div>
+                </div>
+                 <div class="col-lg-3" style="margin-right: 10px;">
+                    <div class="card">
+                        <img src="./images/Frame 8.png" alt="">
+                        <h4>Artificial Plants</h4>
+                        <p>₱ <span>900.00</span></p>
+                    </div>
+                </div>
+                 <div class="col-lg-3">
+                    <div class="card">
+                        <img src="./images/Frame 7.png" alt="">
+                        <h4>Artificial Plants</h4>
+                        <p>₱ <span>3,500.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- plants end -->
+
+      <!-- About us -->
+       <section id="about">
+        <div class="container">
+            <h2>About us</h2>
+            <p>Order now and appreciate the beauty of nature</p>
+            <div class="row d-flex">
+                <div class="col-lg-4">
+                    <img src="./images/Group 1.png" alt="">
+                    <h3>Large Assortment</h3>
+                    <p>we offer many different types of products with fewer variations in each category.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/Group 2.png" alt="">
+                    <h3>Fast & Free Shipping</h3>
+                    <p>4-day or less delivery time, free shipping and an expedited delivery option.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images/Group 3.png" alt="">
+                    <h3>24/7 Support</h3>
+                    <p>answers to any business related inquiry 24/7 and in real-time.</p>
+                </div>
+            </div>
+        </div>
+       </section>
+      <!-- About us end -->
+
+
+      <!-- Categories -->
+       <section id="categories">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+       </section>
+
+      <!-- Categories Ends -->
+    </main>
     <footer></footer>
-    
 
 
 
 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/app.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

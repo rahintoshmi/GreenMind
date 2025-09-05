@@ -74,6 +74,12 @@ header nav .links a {
     color: var(--color-2);
     padding: 0 10px;
 }
+header nav .links a:hover{
+    color: var(--color-1);
+}
+header nav ul li a:hover{
+    color: #000;
+}
 
 .fa-user {
     border-right: 1px solid var(--color-2);
@@ -86,6 +92,9 @@ header nav .links a {
 header .mobile .links a i {
     color: var(--color-2);
     margin: 0 7px;
+}
+header .mobile .links a i:hover{
+    color: var(--color-1);
 }
 
 .btn-primary {
@@ -233,6 +242,14 @@ header .mobile .links a i {
 #plants .card {
     border: none;
 }
+#plants .card:hover{
+    transform: translateY(-10px);
+}
+#plants a:hover{
+    background-color: white;
+    color: var(--color-2);
+    border: 1px solid black;
+}
 
 /*=====  End of plants  ======*/
 
@@ -265,6 +282,9 @@ header .mobile .links a i {
     font-size: 18px;
     color: #000;
     margin: 24px 0 12px;
+}
+#about h3:hover,#about p:hover{
+    transform: translateY(-10px);
 }
 
 
@@ -320,6 +340,11 @@ header .mobile .links a i {
     border-radius: 8px;
     padding: 12px 24px;
     background-color: #fff;
+}
+#categories a:hover{
+    background-color: var(--color-1);
+    color: black;
+    border: 1px solid black;
 }
 
 /*=====  End of categories  ======*/

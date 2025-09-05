@@ -346,6 +346,9 @@ header .mobile .links a i:hover{
     color: black;
     border: 1px solid black;
 }
+#categories .card1:hover{
+    transform: translateY(-20px);
+}
 
 /*=====  End of categories  ======*/
 

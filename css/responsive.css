@@ -47,6 +47,35 @@
         flex-direction: column;
     }
 
+    #categories .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #categories .img1 {
+        margin-top: 0%;
+    }
+
+    .category p {
+        margin: 12px 0 42px;
+    }
+
+    #categories img {
+        width: 100%;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    #review .card1 {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        width: 100%;
+
+    }
 }
 
 /* Medium devices (577px to 768px) */
@@ -98,5 +127,33 @@
         flex-direction: column;
     }
 
+    #categories .row {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    #categories .img1 {
+        margin-top: 0%;
+    }
+
+    .category p {
+        margin: 12px 0 42px;
+    }
+
+    #categories img {
+        width: 100%;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    #review .card1 {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        width: 100%;
+
+    }
 }
